@@ -1,0 +1,56 @@
+void main() {
+  var studentname = 'MoheedAziz';
+  print("student name is :${studentname}");
+
+  int english = 86;
+  print("eng marks is :${english}");
+
+  int urdu = 88;
+  print("urdu marks is : ${urdu}");
+
+  int maths = 98;
+  print("maths marks is : ${maths}");
+
+  int biology = 88;
+  print("biology marks is :${biology}");
+
+  int chemistry = 85;
+  print("chemistry marks is :${chemistry}");
+
+  int physics = 82 ;
+  print("physics marks is :${physics}");
+
+  var obtmarks = english + urdu + maths + biology + chemistry + physics;
+  print("obtmarks is : ${obtmarks}");
+
+  var totalmarks = 600;
+  print("totalmarks is : ${totalmarks}");
+
+  num percentage = (obtmarks) / totalmarks * 100;
+  print("percentage is :${percentage}"); 
+
+  if (percentage < 100 && percentage >= 80){
+    print("A+");
+}
+  else if (percentage < 80 && percentage >=70){
+    print ("A");
+}
+    else if (percentage < 70 && percentage >= 60){
+    print ("B");
+}
+    else if (percentage < 60 && percentage >= 50){
+    print (" C");
+}     
+    else if (percentage < 50 && percentage >= 40){
+    print (" D ");
+}
+    else if (percentage < 40 && percentage >= 33){
+    print (" E ");
+}
+    else if (percentage < 33){
+    print (" F ");
+}
+    else {
+    print ("you are fail");
+}
+}
